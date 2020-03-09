@@ -66,3 +66,8 @@ nav #next {
 #lightbox_container {
     display : none;
 }
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}

@@ -60,12 +60,54 @@ nav #next {
   margin-left: 15%;
 }
 
-.gallery-container {
-}
 
 #lightbox_container {
     display : none;
 }
+
+
+#lightbox-head {
+  z-index: 1;
+}
+
+#lightbox_close {
+  color: #aaa;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#lightbox_close:hover, #lightbox_close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lightbox_title {
+  color: #eeeeee;
+}
+
+#lightbox_img > img {
+  width: 100%;
+}
+
+#lightbox_img {
+  border: 3px solid #ddd;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#lightbox_full_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 .gallery-container {
 	display: grid;

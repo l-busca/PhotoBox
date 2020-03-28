@@ -116,6 +116,10 @@ nav * {
   padding-right: 5%;
 }
 
+#bleu {
+	color : #96d8ed;
+}
+
 .gallery-container{
 	padding: 2em;
 	display : grid;

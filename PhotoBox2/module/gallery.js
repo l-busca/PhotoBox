@@ -1,11 +1,10 @@
 import {load,init} from "./photoloader.js";
 import {afficherLightbox,changerImage} from "./lightbox.js";
 
-
-let identifiants;
 let prev;
 let next;
 let current;
+let idfs;
 
 export function initG(url){
     init(url)
@@ -14,7 +13,6 @@ export function initG(url){
 
 export function loadG() {
     $("#load_gallery").on("click",() => load("/www/canals5/photobox/photos/?offset=0&size=12").then(e=>{
-
         prev = e.data.links.last.href;
         next = e.data.links.next.href;
         editDom(e)
@@ -72,6 +70,12 @@ export function nextG(){
         editDom(e)
     }));
 
+}
+
+export function currTest() {
+	if(current ===e.data.links.last.href){
+		alert("entreeok");
+    }
 }
 
 
